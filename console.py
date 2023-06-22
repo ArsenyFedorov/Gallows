@@ -10,17 +10,20 @@ class PrintInput:
         print(self.txt.progress, *user_list)
 
     def print_message(self, message):
+        """Выводит очень важную инфу"""
         print("=" * len(message))
         print(message)
         print("=" * len(message))
 
     def input_char(self) -> str:
+        """Получает букву от пользователя """
         print("=" * len(self.txt.char))
         char = input(self.txt.char).upper().strip()
         print("=" * len(self.txt.char))
         return char
 
     def user_option(self):
+        """Выводит стартовое меню"""
         print("=" * len(self.txt.menu))
         print(self.txt.menu)
         option = input(self.txt.option).strip()

@@ -3,11 +3,13 @@ from modul import Word
 
 
 class Star:
+    """Этот класс начинает игру """
     def __init__(self):
         self.console = PrintInput()
         self.word = Word("КОТ")
 
     def start_game(self):
+        """старт игры """
         while True:
             option = self.console.user_option()
             self.word.empty_word = [" -- " for i in range(len(self.word.word))]

@@ -1,4 +1,5 @@
 class Word:
+    """Этот класс создаёт слово которое нужно угадать """
     def __init__(self, word: str):
         self.word = list(word)
         self.empty_word = [" -- " for i in range(len(self.word))]
